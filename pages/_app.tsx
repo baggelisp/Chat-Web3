@@ -1,6 +1,9 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { MoralisProvider } from "react-moralis";
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 declare var process : {
   env: {

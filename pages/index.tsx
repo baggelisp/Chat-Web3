@@ -4,15 +4,19 @@ import { useMoralis } from 'react-moralis';
 
 
 export default function Home() {
-  const { isAuthenticated } = useMoralis();
+  const { isAuthenticated, logout } = useMoralis();
 
   if (!isAuthenticated) return <Login/>
+  
   return (
     <div className="h-screen">
       <Head>
         <title>Web 3 chat</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <div> Welcome </div>
+      <button onClick={()=> logout()}>Logout </button>
       
     </div>
   )
