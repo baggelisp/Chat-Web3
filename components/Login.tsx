@@ -8,15 +8,18 @@ function Login() {
   const { authenticate } = useMoralis();
 
   return (
-    <div className='bg-black relative text-white'>
+    <div className='bg-black relative text-black'>
       <div className='flex flex-col absolute h-5/6 z-50 w-full items-center justify-center space-y-4'>
+        <div className='w-[225px] text-4xl mb-5 border-l-2 border-black px-2'>
+          Crypto News <br /> <span className='text-6xl font-bold'>CHAT</span> 
+        </div>
         <Image 
           height={200}
           width={200}
           className='object-cover rounded-full'
           src="/profile-image.jpeg"/>
         <button 
-          className='bg-yellow-500 rounded-lg font-bold animate-pulse px-5 py-3'
+          className='bg-[#EF972C] rounded-lg animate-pulse px-5 py-3 text-black'
           onClick={() => authenticate()}>         
           Login with MetaMask
           <FontAwesomeIcon className='ml-2' icon={faRightToBracket} />
