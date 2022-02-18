@@ -3,7 +3,7 @@ module.exports = {
   reactStrictMode: true,
   images: {
     domains: [
-      'imageio.forbes.com'
+      'avatars.dicebear.com'
     ]
   },
   env: {
