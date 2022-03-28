@@ -22,7 +22,7 @@ export default function Header() {
                 </h1>
 
                 <h2 className='text-1xl mx-auto text-center text-pink-500 mt-2'>
-                    Username: {user?.get('username')}
+                    Your Address: {user?.get('username')}
                 </h2>
             </div>
         </div>

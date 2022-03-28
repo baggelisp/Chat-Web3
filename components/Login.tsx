@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 
 function Login() {
-  const { authenticate } = useMoralis();
+  const { authenticate} = useMoralis();
 
   return (
     <div className='bg-black relative text-black'>
