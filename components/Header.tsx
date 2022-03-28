@@ -18,7 +18,7 @@ export default function Header() {
                 </div>
 
                 <h1 className='text-3xl mx-auto text-center text-pink-500 mt-4'>
-                    Welcome to the Crypto News chat
+                    Welcome to Greek Cryptocurrency Community
                 </h1>
 
                 <h2 className='text-1xl mx-auto text-center text-pink-500 mt-2'>

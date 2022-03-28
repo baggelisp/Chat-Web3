@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="h-screen overflow-y-scroll bg-gradient-to-b from-black to-fuchsia-900 overflow-hidden">
       <Head>
-        <title>Web 3 chat</title>
+        <title>Greek Cryptocurrency Community</title>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"/>
       </Head>

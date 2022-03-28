@@ -10,8 +10,8 @@ function Login() {
   return (
     <div className='bg-black relative text-white'>
       <div className='flex flex-col absolute h-5/6 z-50 w-full items-center justify-center space-y-4'>
-        <div className='w-[225px] text-4xl mb-5 border-l-2 border-white px-2'>
-          Crypto News <br /> <span className='text-6xl font-bold'>CHAT</span> 
+        <div className='w-[305px] text-4xl mb-5 border-l-2 border-white px-2'>
+          Greek Cryptocurrency <br /> <span className='text-6xl font-bold'>Community</span> 
         </div>
         <Image 
           height={200}
