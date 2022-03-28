@@ -11,7 +11,7 @@ export default function Header() {
         border-b-2 border-pink-700'>
             <div className=''>
                 <div className='justify-end	flex'>
-                    <button className='p-2 bg-pink-500 rounded-lg'>LOGOUT</button>
+                    <button onClick={logout} className='p-2 bg-pink-500 rounded-lg'>LOGOUT</button>
                 </div>
                 <div className='relative h-28 w-28 mx-auto border-pink-500 border-4 rounded-full'>
                     <Avatar username="" logoutOnPress=""/>
