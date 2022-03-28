@@ -14,7 +14,7 @@ export default function Header() {
                     <button onClick={logout} className='p-2 bg-pink-500 rounded-lg'>LOGOUT</button>
                 </div>
                 <div className='relative h-28 w-28 mx-auto border-pink-500 border-4 rounded-full'>
-                    <Avatar username="" logoutOnPress=""/>
+                    <Avatar username={user?.get('username')} logoutOnPress="false"/>
                 </div>
 
                 <h1 className='text-3xl mx-auto text-center text-pink-500 mt-4'>
