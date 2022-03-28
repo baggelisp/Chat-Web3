@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Login from '../components/Login'
 import { useMoralis } from 'react-moralis';
 import Header from '../components/Header';
+import Messages from '../components/Messages';
 
 
 export default function Home() {
@@ -16,13 +17,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"/>
       </Head>
-
-      <div> Welcome </div>
-      <button onClick={()=> logout()}>Logout </button>
-      
+      {/* <button onClick={()=> logout()}>Logout </button> */}
         <div className='max-w-screen-2xl mx-auto'>
           <Header/>
-          {/* { Messages } */}
+          <Messages/> 
         </div>
     </div>
   )

@@ -4,20 +4,16 @@ import Image from 'next/image'
 import Avatar from './Avatar';
 
 export default function Header() {
-    const { user } = useMoralis();
+    const { user, logout } = useMoralis();
 
     return (
-        <div>
+        <div className='sticky top-0 p-5 z-50 bg-black shadow-sm
+        border-b-2 border-pink-700'>
             <div className=''>
-                <div className='relative h-24 w-24 mx-auto hidden lg:inline-grid'>
-                    <Image 
-                        height={200}
-                        width={200}
-                        className='object-cover rounded-full'
-                        src="/profile-image.jpeg"/>
+                <div className='justify-end	flex'>
+                    <button className='p-2 bg-pink-500 rounded-lg'>LOGOUT</button>
                 </div>
-
-                <div className='relative h-48 w-48 mx-auto border-pink-500 border-4 rounded-full'>
+                <div className='relative h-28 w-28 mx-auto border-pink-500 border-4 rounded-full'>
                     <Avatar username="" logoutOnPress=""/>
                 </div>
 
@@ -25,7 +21,9 @@ export default function Header() {
                     Welcome to the Crypto News chat
                 </h1>
 
-
+                <h2 className='text-1xl mx-auto text-center text-pink-500 mt-2'>
+                    Username: {user?.get('username')}
+                </h2>
             </div>
         </div>
     )

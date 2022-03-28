@@ -8,11 +8,10 @@ export default function Avatar( {username , logoutOnPress} : {username:any , log
 
     return (
         <Image
-        className='rounded-full bg-black cursor-pointer hover:opacity-75'
-        src={`https://avatars.dicebear.com/api/identicon/${username || user?.get('username')}.svg`}
-        layout='fill'
-        onClick={()=> logoutOnPress && logout()}
-        
+            className='rounded-full bg-black cursor-pointer hover:opacity-75'
+            src={`https://avatars.dicebear.com/api/identicon/${user?.get('username')}.svg`}
+            layout='fill'
+            onClick={()=> logoutOnPress && logout()}
         />
     )
 }
