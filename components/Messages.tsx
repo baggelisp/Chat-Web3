@@ -28,7 +28,6 @@ function Messages() {
                     <SendMessage endOfMessagesRef={endOfMessagesRef}/>
                 </div>
                 <div ref={endOfMessagesRef}>
-                    <p>You are up to date {user?.getUsername()}</p>
                 </div>
             </div>
         )
