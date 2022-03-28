@@ -20,19 +20,16 @@ function SendMessage( { endOfMessagesRef }: AppProps) {
             ethAddress: user?.get('ethAddress')
         }).then( 
             (message: any) => {
-                console.log("Success")
-                console.log(message)
+                endOfMessagesRef.current.scrollIntoView({ behavior: 'smooth' });
+                setMessage("");
 
             },
             (error: any) => {
-                console.log("Error")
-
-                console.log(error?.message)
+                alert('Error sending message. Please try again.')
             },
         );
 
-        endOfMessagesRef.current.scrollIntoView({ behavior: 'smooth' });
-        setMessage("");
+
     }
     return (
         <form className='flex w-11/12 fixed bottom-10 bg-black opacity-80
@@ -42,6 +39,7 @@ function SendMessage( { endOfMessagesRef }: AppProps) {
                 text-white placeholder-gray-500
                 pr-5' 
                 type="text"
+                value={message}
                 onChange={e => setMessage(e.target.value)}
                 placeholder='Enter a message...'/>
             <button
