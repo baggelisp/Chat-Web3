@@ -23,7 +23,7 @@ function Message({ message }: AppProps) {
             ${isUserMessage && "justify-end" }
         `}>
             <div className={`relative h-8 w-8 ${isUserMessage && 'order-last ml-2' }`}>
-                <Avatar username={user?.getUsername()} logoutOnPress='false'/>
+                <Avatar username={message.get('ethAddress')} logoutOnPress='false'/>
             </div>
             <div className={`flex space-x-4 px-3 p-3 rounded-lg 
                 ${isUserMessage ? 'rounded-br-none bg-pink-300' : 'rounded-bl-none bg-blue-400' }
