@@ -9,7 +9,7 @@ export default function Avatar( {username , logoutOnPress} : {username:any , log
     return (
         <Image
             className='rounded-full bg-black cursor-pointer hover:opacity-75'
-            src={`https://avatars.dicebear.com/api/identicon/${username ? username : user?.get('ethAddress')}.svg`}
+            src={`https://avatars.dicebear.com/api/bottts/${username ? username : user?.get('ethAddress')}.svg`}
             layout='fill'
             onClick={()=> logoutOnPress && logout()}
         />
