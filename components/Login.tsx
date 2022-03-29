@@ -7,6 +7,17 @@ import { faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 function Login() {
   const { authenticate } = useMoralis();
 
+
+  const doLogin = () => {
+    authenticate().then( 
+      (message: any) => {
+          if (!message) alert('Please add MetaMask on your browser!')
+      },
+      (error: any) => {
+      },
+  );
+  };
+
   return (
     <div className='bg-black relative text-white'>
       <div className='flex flex-col absolute h-5/6 z-50 w-full items-center justify-center space-y-4'>
@@ -20,7 +31,7 @@ function Login() {
           src="/profile-image.jpeg"/>
         <button 
           className='bg-[#EF972C] rounded-lg animate-pulse px-5 py-3 text-white'
-          onClick={() => authenticate()}>         
+          onClick={() => doLogin()}>         
           Login with MetaMask
           <FontAwesomeIcon className='ml-2' icon={faRightToBracket} />
         </button>
