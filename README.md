@@ -2,12 +2,12 @@
 
 🆕 Decentralized Messaging App.
 
-Features:
-✅ Login with metamask
-✅ Code with React & Next.js
-✅ Style it with Tailwind CSS!
-✅ Functionality with the Moralis Platform
-✅ Deployed it in TestNet
+Features: <br />
+✅ Login with metamask <br />
+✅ Code with React & Next.js <br />
+✅ Style it with Tailwind CSS! <br />
+✅ Functionality with the Moralis Platform <br />
+✅ Deployed it in TestNet <br />
 
 ## Preview
 
